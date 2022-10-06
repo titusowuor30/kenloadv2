@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "cAHRBdeJvnVm2l40vvR3npEvQXLc2yrWMA5GLx/GnXJnRoGb0iImGIQiuEHp3twIHul2Ii3puBk99rQDAa+ISQ==",
+  "success": true,
+  "projectFilePath": "C:\\data\\vue\\kenloadv2wms\\kenloadv2wms\\kenloadv2wms.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Michael\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.10\\microsoft.netcore.app.runtime.win-x64.5.0.10.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.10\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.10.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.10\\microsoft.aspnetcore.app.runtime.win-x64.5.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

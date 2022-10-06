@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZPyqu6P31sqtvbzqHVA2tyFmO9KRUFT2p49Kp+9Urk//cIWge/Q0Csn8fR++uj6Wyx1w0b0q0ZiVLcdClrSFSg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Masterspace\\Documents\\projects\\kenloadv2\\kenloadv2wms\\kenloadv2wms.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Masterspace\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
+    "C:\\Users\\Masterspace\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

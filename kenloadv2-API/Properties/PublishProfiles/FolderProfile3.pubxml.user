@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\compile\api</_PublishTargetUrl>
+    <History>True|2022-05-27T09:57:58.9703268Z;True|2022-05-27T12:13:27.8725877+03:00;True|2022-05-27T11:59:05.0874840+03:00;True|2022-05-27T11:57:20.2364085+03:00;True|2022-05-27T11:31:04.6048156+03:00;False|2022-05-27T11:30:14.9729514+03:00;True|2022-05-27T10:39:14.5292570+03:00;</History>
+  </PropertyGroup>
+</Project>
