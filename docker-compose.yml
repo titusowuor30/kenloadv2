@@ -1,0 +1,51 @@
+volumes:
+  datafiles:
+services:
+  db:
+    image: mysql:8.0.23
+    #Map port 3306 on the mysql container to port 3307 in the host
+    ports:
+      - "3306:3307"
+    #Specify where the persisted Data should be stored
+    volumes:
+      - datafiles:/var/lib/mysql
+      - "~/sql-scripts/setup.sql:/docker-entrypoint-initdb.d/1.sql"
+    environment:
+      PWD: root
+      ACCEPT_EULA: "Y"
+  kenloadv2-api:
+    image: kenloadv2-api
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./kenloadv2-API/Dockerfile
+    environment:
+      - Logging__LogLevel__Default=Information
+    ports:
+      - "44365:80"
+    depends_on:
+      - db
+  kenloadv2-ui:
+    image: kenloadv2-ui
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./kenloadv2-UI/Dockerfile
+      args:
+        VUE_APP_API_URL: http://localhost:44365
+    ports:
+      - "8081:80"
+    depends_on:
+      - kenloadv2-api
+  # kenloadv2wms:
+  #   image: kenloadv2wms
+  #   restart: unless-stopped
+  #   build:
+  #     context: .
+  #     dockerfile: ./kenloadv2wms/Dockerfile
+  #     args:
+  #       VUE_APP_API_URL: http://localhost:5002
+  #   ports:
+  #     - "5002:80"
+  #   depends_on:
+  #     - kenloadv2-api
